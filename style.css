@@ -61,3 +61,36 @@ button {
     display: none; /* Initially hidden */
     margin-top: 20px;
 }
+@media (max-width: 600px) {
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #bmiResult, #status {
+        font-size: 16px;
+    }
+
+    #dietRecommendations h3 {
+        font-size: 18px;
+    }
+
+    #dietRecommendations ul {
+        margin-left: 15px;
+    }
+}
+
+/* Extra small screens (mobile in portrait) */
+@media (max-width: 400px) {
+    #bmiResult, #status {
+        font-size: 14px;
+    }
+
+    #dietRecommendations h3 {
+        font-size: 16px;
+    }
+
+    #dietRecommendations ul {
+        margin-left: 10px;
+    }
+}
