@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h1 style="color: rgb(14, 6, 18); font-family: 'Times New Roman', Times, serif; text-decoration: underline;" class="text-center pt-5">BMI CALCULATOR</h1>
+        <div class="row d-flex pt-5">
+            <div class="col-6 c1">
+                <form action="">
+                    <label style="color: rgb(10, 9, 9); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 50px;" class="fs-5" for="w"><strong>Weight (Kg)</strong></label> <br> 
+                    <input type="text" id="w"> <br>
+                    <label style="color: rgb(0, 0, 0); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 50px;" class="fs-5" for="h"><strong>Height (cm)</strong></label> <br>
+                    <input type="text" id="h"> <br>
+                    <button type="button" onclick="calculateBMI()" class="btn btn-secondary text-white">Calculate</button>
+                </form>
+                <p id="bmiResult"></p>
+                <p id="status"></p>
+                <button class="btn btn-danger" id="dietButton" onclick="showDietRecommendations()">Show Diet Plan</button>
+                <div id="dietRecommendations" class="diet-plan"></div>
+            </div>
+            <div class="col-6 c2">
+                <img width="450px" height="350px" src="https://app.mantracare.org/wp-content/uploads/2021/09/over-weight.png" alt="">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

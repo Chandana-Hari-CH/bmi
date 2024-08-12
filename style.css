@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(224, 229, 164);
+    background-image: url('https://www.runsociety.com/wp-content/uploads/2022/10/Calculate-BMI-thumb.jpg');
+    background-size: cover;
+}
+.row{
+    padding-left: 380px;
+}
+.c1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    padding: 2rem;
+    border: 2px solid black;
+    box-shadow: 2px 2px 6px black;
+    backdrop-filter: blur(80px);
+    
+}
+
+form {
+    
+    width: 80%; 
+    max-width: 400px; 
+}
+.label p{
+    font-size: 5px;
+    
+}
+
+.c1 input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #1e1d1d; 
+    text-align: left;
+    width: 100%;
+    padding: 0.5rem 0; 
+    outline: none;
+    margin-bottom: 1rem; 
+    
+}
+.result{
+    padding-top: 10px;
+}
+
+button {
+    width: 100%;
+}
+.c2{
+    margin-left: 100px;
+    margin-top: 0;
+    padding-top: 0;
+}
+.diet-plan {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+#dietButton {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
